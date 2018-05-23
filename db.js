@@ -12,12 +12,6 @@ const userModel = require('./model/userModel');
 const restaurantModel = require('./model/restaurantModel');
 require('dotenv').config();
 
-// const configs = {
-//   user: "jianhaotan",
-//   host: "127.0.0.1",
-//   database: "hungrycomehere",
-//   port: 5432
-// };
 const configs = {
   user: process.env.db_user,
   host: process.env.db_host,
