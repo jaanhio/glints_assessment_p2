@@ -82,6 +82,41 @@ module.exports = (pool) => {
           callback(error, queryResult);
         }
       });
+    },
+    getUserCollectionDetails: (userId, collectionId, callback) => {
+      let queryString = 'SELECT collection_id, collection_name, restaurant_id, restaurants.name AS restaurant_name FROM collectiondetails JOIN collections ON (collections.id = collectiondetails.collection_id) JOIN restaurants ON (restaurants.id = collectiondetails.restaurant_id) WHERE collection_id = $1;';
+      pool.query(queryString, [collectionId], (error, queryResult) => {
+        if (error) {
+          console.log(error);
+        }
+        else {
+          callback(error, queryResult.rows);
+        }
+      });
+    },
+    addCollectionDetails: (userId, collectionId, restaurantId, callback) => {
+      let inputValues = [collectionId, restaurantId];
+      let queryString = 'INSERT INTO collectiondetails (collection_id, restaurant_id) VALUES ($1, $2);';
+      pool.query(queryString, inputValues, (error, queryResult) => {
+        if (error) {
+          console.log(error);
+        }
+        else {
+          callback(error, queryResult);
+        }
+      });
+    },
+    deleteCollectionDetails: (userId, collectionId, restaurantId, callback) => {
+      let inputValues = [collectionId, restaurantId];
+      let queryString = 'DELETE from collectiondetails where collectiondetails.collection_id = $1 and collectiondetails.restaurant_id = $2;';
+      pool.query(queryString, inputValues, (error, queryResult) => {
+        if (error) {
+          console.log(error);
+        }
+        else {
+          callback(error, queryResult);
+        }
+      });
     }
   }
 }

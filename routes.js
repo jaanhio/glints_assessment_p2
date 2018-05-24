@@ -34,13 +34,13 @@ module.exports = (app, db) => {
   app.post('/api/user/:userId/collections/:collectionId/delete', userCtrl.deleteCollection(db));
 
   // // see details on user collection
-  // app.get('/api/user/:userId/collections/:collectionId', user.getUserCollectionDetails);
+  app.get('/api/user/:userId/collections/:collectionId', userCtrl.getUserCollectionDetails(db));
 
   // // add restaurants to user collection
-  // app.get('/api/user/:userId/collections/:collectionId/new/:restaurantId');
+  app.post('/api/user/:userId/collections/:collectionId/new/:restaurantId', userCtrl.addCollectionDetails(db));
 
   // // remove restaurants from user collection
-  // app.post('/api/user/:userId/collections/:collectionId/delete/:restaurantId');
+  app.post('/api/user/:userId/collections/:collectionId/delete/:restaurantId', userCtrl.deleteCollectionDetails(db));
 
   // // get user friends
   // app.get('/api/user/:userId/friends/', userCtrl.getUserFriends);

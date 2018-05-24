@@ -94,13 +94,61 @@ const deleteCollection = (db) => {
       }
     });
   }
+};
+
+const getUserCollectionDetails = (db) => {
+  return (request, response) => {
+    let { userId, collectionId } = request.params;
+    db.user.getUserCollectionDetails(userId, collectionId, (error, queryResult) => {
+      if (error) {
+        console.log(error.stack);
+      }
+      else {
+        response.status(200).send(queryResult);
+      }
+    })
+  }
+};
+
+const addCollectionDetails = (db) => {
+  return (request, response) => {
+    let { userId, collectionId, restaurantId } = request.params;
+    db.user.addCollectionDetails(userId, collectionId, restaurantId, (error, queryResult) => {
+      if (error) {
+        console.log(error.stack);
+      }
+      else {
+        response.status(200).send({
+          addRestaurantSuccess: true
+        });
+      }
+    });
+  }
 }
 
+const deleteCollectionDetails = (db) => {
+  return (request, response) => {
+    let { userId, collectionId, restaurantId } = request.params;
+    db.user.deleteCollectionDetails(userId, collectionId, restaurantId, (error, queryResult) => {
+      if (error) {
+        console.log(error.stack);
+      }
+      else {
+        response.status(200).send({
+          deleteRestaurantSuccess: true
+        });
+      }
+    });
+  }
+}
 
 module.exports = {
   create,
   login,
   getUserCollections,
   addCollection,
-  deleteCollection
+  deleteCollection,
+  getUserCollectionDetails,
+  addCollectionDetails,
+  deleteCollectionDetails
 }
