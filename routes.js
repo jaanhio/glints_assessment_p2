@@ -5,7 +5,7 @@
  * Upon match, a corresponding controller method should be called.
  *
  */
-// const userCtrl = require('./controller/userController');
+const userCtrl = require('./controller/userController');
 const restaurantCtrl = require('./controller/restaurantController');
 
 
@@ -13,29 +13,25 @@ module.exports = (app, db) => {
 
   /*User routes*/
   // login routes 
-  // app.route('/api/user/login')
-  //   .get(userCtrl.loginForm)
-  //   .post(userCtrl.login(db));
+  app.post('/api/user/login', userCtrl.login(db));
 
   // // logout 
   // app.get('/api/user/:userId/logout', userCtrl.logout);
 
-  // // register new user
-  // app.route('/api/user/new')
-  //   .get(userCtrl.newForm)
-  //   .post(userCtrl.create(db));
+  // register new user
+  app.post('/api/user/new', userCtrl.create(db));
 
   // // get user details
   // app.get('/api/user/:userId', userCtrl.getUserDetails);
 
-  // // get user collections
-  // app.get('/api/user/:userId/collections', userCtrl.getUserCollections);
+  // get user collections
+  app.get('/api/user/:userId/collections', userCtrl.getUserCollections(db));
 
-  // // add new user collection
-  // app.get('/api/user/:userId/collections/new', userCtrl.addCollection);
+  // add new user collection
+  app.post('/api/user/:userId/collections/new', userCtrl.addCollection(db));
 
   // // delete user collection
-  // app.post('/api/user/:userId/collections/:collectionId/delete', userCtrl.deleteCollection);
+  app.post('/api/user/:userId/collections/:collectionId/delete', userCtrl.deleteCollection(db));
 
   // // see details on user collection
   // app.get('/api/user/:userId/collections/:collectionId', user.getUserCollectionDetails);

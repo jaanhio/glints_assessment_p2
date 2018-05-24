@@ -26,7 +26,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (1, 7, '11:30', '21:00');
+  (1, 0, '11:30', '21:00');
 -- osakaya restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -55,7 +55,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (2, 7, '11:30', '21:00');
+  (2, 0, '11:30', '21:00');
 -- the stinking rose
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -84,7 +84,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (3, 7, '11:30', '22:00');
+  (3, 0, '11:30', '22:00');
 -- mccormick & kuletos
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -113,7 +113,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (4, 7, '11:30', '22:00');
+  (4, 0, '11:30', '22:00');
 -- mifune restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -142,7 +142,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (5, 7, '11:00', '22:00');
+  (5, 0, '11:00', '22:00');
 -- the cheesecake factory
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -171,7 +171,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (6, 7, '10:00', '23:00');
+  (6, 0, '10:00', '23:00');
 -- new dehli indian restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -200,7 +200,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (7, 7, '17:30', '22:00');
+  (7, 0, '17:30', '22:00');
 -- iroha restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -229,7 +229,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (8, 7, '11:30', '21:30');
+  (8, 0, '11:30', '21:30');
 -- rose pistola
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -258,7 +258,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (9, 7, '11:30', '23:00');
+  (9, 0, '11:30', '23:00');
 -- alioto's restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -287,7 +287,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (10, 7, '11:00', '23:00');
+  (10, 0, '11:00', '23:00');
 -- canton seafood & dimsum restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -316,7 +316,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (11, 7, '10:00', '21:30');
+  (11, 0, '10:00', '21:30');
 -- all season restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -345,7 +345,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (12, 7, '09:30', '21:00');
+  (12, 0, '09:30', '21:00');
 -- bombay indian restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -374,7 +374,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (13, 6, '11:30', '22:30');
+  (13, 0, '11:30', '22:30');
 -- Sam's Grill & Seafood Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -403,7 +403,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (14, 7, '17:00', '21:00');
+  (14, 0, '17:00', '21:00');
 -- 2G Japanese Brasserie
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -432,7 +432,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (15, 7, '11:00', '22:00');
+  (15, 0, '11:00', '22:00');
 -- Restaurant Lulu
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -461,7 +461,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (16, 7, '11:30', '21:00');
+  (16, 0, '11:30', '21:00');
 -- sudachi
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -490,7 +490,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (17, 7, '15:00', '23:30');
+  (17, 0, '15:00', '23:30');
 -- hanuri
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -519,7 +519,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (18, 7, '11:00', '00:00');
+  (18, 0, '11:00', '00:00');
 -- herbivore
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -548,7 +548,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (19, 7, '09:00', '22:00');
+  (19, 0, '09:00', '22:00');
 -- penang garden
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -577,7 +577,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (20, 7, '11:00', '23:00');
+  (20, 0, '11:00', '23:00');
 -- johns grill
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -606,7 +606,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (21, 7, '12:00', '22:00');
+  (21, 0, '12:00', '22:00');
 -- quan bac
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -635,7 +635,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (22, 7, '11:00', '22:00');
+  (22, 0, '11:00', '22:00');
 -- bamboo restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -664,7 +664,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (23, 7, '12:00', '00:00');
+  (23, 0, '12:00', '00:00');
 -- burger bar
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -693,7 +693,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (24, 7, '11:00', '22:00');
+  (24, 0, '11:00', '22:00');
 -- blu restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -722,7 +722,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (25, 7, '07:00', '15:00');
+  (25, 0, '07:00', '15:00');
 -- Naan 'N' Curry
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -751,7 +751,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (26, 7, '11:00', '04:00');
+  (26, 0, '11:00', '04:00');
 -- Shanghai China Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -780,7 +780,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (27, 7, '11:00', '21:30');
+  (27, 0, '11:00', '21:30');
 -- Tres
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -809,7 +809,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (28, 7, '11:30', '22:00');
+  (28, 0, '11:30', '22:00');
 -- Isobune Sushi
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -838,7 +838,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (29, 7, '11:30', '21:30');
+  (29, 0, '11:30', '21:30');
 -- Viva Pizza Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -867,7 +867,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (30, 7, '11:00', '00:00');
+  (30, 0, '11:00', '00:00');
 --Far East Cafe
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -896,7 +896,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (31, 7, '11:30', '22:00');
+  (31, 0, '11:30', '22:00');
 -- Parallel 37
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -925,7 +925,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (32, 7, '11:30', '22:00');
+  (32, 0, '11:30', '22:00');
 -- Bai Thong Thai Cuisine
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -954,7 +954,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (33, 7, '11:00', '22:00');
+  (33, 0, '11:00', '22:00');
 -- alhamra
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -983,7 +983,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (34, 7, '11:00', '23:00');
+  (34, 0, '11:00', '23:00');
 -- A-1 Cafe Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1008,7 +1008,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (35, 7, '11:00', '22:00');
+  (35, 0, '11:00', '22:00');
 -- Nick's Lighthouse
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1037,7 +1037,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (36, 7, '11:00', '22:30');
+  (36, 0, '11:00', '22:30');
 -- Paragon Restaurant & Bar
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1091,7 +1091,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (38, 7, '17:00', '22:00');
+  (38, 0, '17:00', '22:00');
 -- Bow Hon Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1120,7 +1120,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (39, 7, '11:00', '22:30');
+  (39, 0, '11:00', '22:30');
 -- San Dong House
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1149,7 +1149,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (40, 7, '11:00', '23:00');
+  (40, 0, '11:00', '23:00');
 -- Thai Stick Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1178,7 +1178,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (41, 7, '11:00', '01:00');
+  (41, 0, '11:00', '01:00');
 -- oCesario's
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1207,7 +1207,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (42, 7, '11:30', '22:00');
+  (42, 0, '11:30', '22:00');
 -- Colombini Italian CafeBistro
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1236,7 +1236,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (43, 7, '17:00', '22:00');
+  (43, 0, '17:00', '22:00');
 -- Sabella& La Torre
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1265,7 +1265,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (44, 7, '10:00', '22:30');
+  (44, 0, '10:00', '22:30');
 -- Soluna Cafe and Lounge
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1319,7 +1319,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (46, 7, '09:00', '22:00');
+  (46, 0, '09:00', '22:00');
 -- oIndia Garden Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1348,7 +1348,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (47, 7, '10:00', '23:00');
+  (47, 0, '10:00', '23:00');
 -- Sapporo-Ya Japanese Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1377,7 +1377,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (48, 7, '11:00', '22:30');
+  (48, 0, '11:00', '22:30');
 -- Santorini's Mediterranean Cuisine
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1406,7 +1406,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (49, 7, '08:00', '22:30');
+  (49, 0, '08:00', '22:30');
 -- Kyoto Sushi
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1435,7 +1435,7 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (50, 7, '16:30', '22:30');
+  (50, 0, '16:30', '22:30');
 -- Marrakech Moroccan Restaurant
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
@@ -1464,4 +1464,4 @@ VALUES
 INSERT INTO openingtime
   (restaurant_id, day_id, start_time, end_time)
 VALUES
-  (51, 7, '17:30', '02:00');
+  (51, 0, '17:30', '02:00');
