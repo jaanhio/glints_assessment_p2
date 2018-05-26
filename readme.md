@@ -8,7 +8,11 @@ PDF copy of ERD diagram can be found on root of folder.
 ---
 ## 1.Setup and seed postgresql db
 
+Clone repo
 `git clone https://github.com/jaanhio/glints_assessment_p2_backend.git && cd glints_assessment_p2_backend`
+
+Install dependencies
+`yarn`
 
 Run the following commands according to their respective order.
 
