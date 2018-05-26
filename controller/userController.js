@@ -1,15 +1,35 @@
 const create = (db) => {
   return (request, response) => {
     let userDetails = request.body;
-    console.log(userDetails);
+    // console.log(userDetails);
     db.user.create(userDetails, (error, queryResult, token) => {
       if (error) {
         console.log(error.stack);
       }
       else {
         console.log(queryResult);
-        response.status(200).send({
-          auth: true
+        console.log(userDetails);
+        const userEmail = userDetails.email;
+        // response.status(200).send({
+        //   auth: true
+        // });
+        db.user.findUserId(userEmail, (error, queryResult) => {
+          if (error) {
+            console.log(error.stack);
+          }
+          else {
+            const { id, first_name, last_name, email, token } = queryResult.rows[0];
+            response.status(200).send({
+              auth: true,
+              queryResult: {
+                userId: id,
+                firstName: first_name,
+                lastName: last_name,
+                email: email,
+                token
+              }
+            });
+          }
         });
       }
     });
@@ -27,11 +47,11 @@ const login = (db) => {
       else {
         if (hashCheckResult === true) {
           console.log(queryResult);
-          const { userId, last_name, first_name, email, token } = queryResult;
+          const { id, last_name, first_name, email, token } = queryResult;
           response.status(200).send({
             auth: true,
             queryResult: {
-              userId,
+              userId: id,
               firstName: first_name,
               lastName: last_name,
               email: email,
@@ -104,9 +124,16 @@ const getUserCollectionDetails = (db) => {
         console.log(error.stack);
       }
       else {
+        console.log(queryResult);
+        // let collectionName = queryResult[0].collection_name;
+
+        // response.status(200).send({
+        //   collectionName: collectionName,
+        //   queryResult: queryResult
+        // });
         response.status(200).send(queryResult);
       }
-    })
+    });
   }
 };
 
@@ -142,6 +169,39 @@ const deleteCollectionDetails = (db) => {
   }
 }
 
+const editCollectionName = (db) => {
+  return (request, response) => {
+    let { collectionId } = request.params;
+    let collectionName = request.body;
+    console.log(collectionName);
+    console.log(collectionId);
+    db.user.editCollectionName(collectionId, collectionName, (error, queryResult) => {
+      if (error) {
+        console.log(error.stack);
+      }
+      else {
+        response.status(200).send({
+          updateCollectionName: true
+        });
+      }
+    });
+  }
+}
+
+const getCollectionName = (db) => {
+  return (request, response) => {
+    let { collectionId } = request.params;
+    db.user.getCollectionName(collectionId, (error, queryResult) => {
+      if (error) {
+        console.log(error.stack);
+      }
+      else {
+        response.status(200).send(queryResult.rows[0]);
+      }
+    });
+  }
+}
+
 module.exports = {
   create,
   login,
@@ -150,5 +210,7 @@ module.exports = {
   deleteCollection,
   getUserCollectionDetails,
   addCollectionDetails,
-  deleteCollectionDetails
+  deleteCollectionDetails,
+  editCollectionName,
+  getCollectionName
 }

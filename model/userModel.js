@@ -23,6 +23,12 @@ module.exports = (pool) => {
         });
       });
     },
+    findUserId: (userEmail, callback) => {
+      let queryString = 'SELECT id, first_name, last_name, email, token FROM users WHERE email = $1;';
+      pool.query(queryString, [userEmail], (error, queryResult) => {
+        callback(error, queryResult);
+      });
+    },
     login: (user, callback) => {
       let inputLogin = [user.email];
       let inputPW = user.password;
@@ -73,13 +79,22 @@ module.exports = (pool) => {
       });
     },
     deleteCollection: (userId, collectionId, callback) => {
-      let queryString = 'DELETE FROM collections WHERE collections.id = $1;';
+      // let queryString1 = 'DELETE FROM collections WHERE collections.id = $1;';
+      let queryString = 'DELETE from collectiondetails WHERE collectiondetails.collection_id = $1;';
       pool.query(queryString, [collectionId], (error, queryResult) => {
         if (error) {
           console.log(error);
         }
         else {
-          callback(error, queryResult);
+          let queryString = 'DELETE from collections where collections.id = $1;';
+          pool.query(queryString, [collectionId], (error, queryResult) => {
+            if (error) {
+              console.log(error);
+            }
+            else {
+              callback(error, queryResult);
+            }
+          });
         }
       });
     },
@@ -90,6 +105,7 @@ module.exports = (pool) => {
           console.log(error);
         }
         else {
+          console.log(queryResult);
           callback(error, queryResult.rows);
         }
       });
@@ -110,6 +126,28 @@ module.exports = (pool) => {
       let inputValues = [collectionId, restaurantId];
       let queryString = 'DELETE from collectiondetails where collectiondetails.collection_id = $1 and collectiondetails.restaurant_id = $2;';
       pool.query(queryString, inputValues, (error, queryResult) => {
+        if (error) {
+          console.log(error);
+        }
+        else {
+          callback(error, queryResult);
+        }
+      });
+    },
+    getCollectionName: (collectionId, callback) => {
+      let queryString = 'SELECT collections.id, collections.collection_name FROM collections where collections.id = $1;';
+      pool.query(queryString, [collectionId], (error, queryResult) => {
+        if (error) {
+          console.log(error);
+        }
+        else {
+          callback(error, queryResult);
+        }
+      });
+    },
+    editCollectionName: (collectionId, collectionName, callback) => {
+      let queryString = 'UPDATE collections set collection_name = $1 where id =$2;';
+      pool.query(queryString, [collectionName.collectionName, collectionId], (error, queryResult) => {
         if (error) {
           console.log(error);
         }

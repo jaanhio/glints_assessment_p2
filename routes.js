@@ -15,42 +15,32 @@ module.exports = (app, db) => {
   // login routes 
   app.post('/api/user/login', userCtrl.login(db));
 
-  // // logout 
-  // app.get('/api/user/:userId/logout', userCtrl.logout);
-
   // register new user
   app.post('/api/user/new', userCtrl.create(db));
-
-  // // get user details
-  // app.get('/api/user/:userId', userCtrl.getUserDetails);
 
   // get user collections
   app.get('/api/user/:userId/collections', userCtrl.getUserCollections(db));
 
+  // get specific user collection name
+  app.get('/api/user/:userId/collections/:collectionId/name', userCtrl.getCollectionName(db));
+
   // add new user collection
   app.post('/api/user/:userId/collections/new', userCtrl.addCollection(db));
 
-  // // delete user collection
+  // delete user collection
   app.post('/api/user/:userId/collections/:collectionId/delete', userCtrl.deleteCollection(db));
 
-  // // see details on user collection
+  // edit user collection
+  app.post('/api/user/:userId/collections/:collectionId/edit', userCtrl.editCollectionName(db));
+
+  // see list of restaurants in user collection
   app.get('/api/user/:userId/collections/:collectionId', userCtrl.getUserCollectionDetails(db));
 
-  // // add restaurants to user collection
+  // add restaurants to user collection
   app.post('/api/user/:userId/collections/:collectionId/new/:restaurantId', userCtrl.addCollectionDetails(db));
 
-  // // remove restaurants from user collection
+  // remove restaurants from user collection
   app.post('/api/user/:userId/collections/:collectionId/delete/:restaurantId', userCtrl.deleteCollectionDetails(db));
-
-  // // get user friends
-  // app.get('/api/user/:userId/friends/', userCtrl.getUserFriends);
-
-  // // add user friend
-  // app.get('/api/user/:usedId/friends/:friendId', userCtrl.addFriend);
-
-  // // delete user friend
-  // app.post('/api/user/:userId/friends/:friendId/delete', userCtrl.deleteFriend);
-
 
   /*Restaurant routes*/
   // get list of restaurants 
@@ -58,4 +48,5 @@ module.exports = (app, db) => {
 
   // get restaurant details
   app.get('/api/restaurants/:restaurantId', restaurantCtrl.getRestaurantDetails(db));
+
 }
