@@ -10,7 +10,7 @@ This is the backend repo. For frontend repo, please refer to here (https://githu
 Run the following commands according to their respective order.
 
 1. Create db
-`createdb hunrycomehere`
+`createdb hungrycomehere`
 
 2. Create tables
 `psql -d hungrycomehere -a -f tables.sql`
