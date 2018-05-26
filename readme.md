@@ -4,6 +4,7 @@ This assessment is separated into frontend and backend.
 
 This is the backend repo. For frontend repo, please refer to here (https://github.com/jaanhio/-glints_assessment_p2_frontend)
 
+PDF copy of ERD diagram can be found on root of folder. 
 ---
 ## 1.Setup and seed postgresql db
 
@@ -40,3 +41,4 @@ secret = '%IzOi9j@aGPBo2UqN*n60JgPA'
 
 ## 3. Start server
 `yarn server`
+
