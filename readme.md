@@ -25,6 +25,9 @@ Run the following commands according to their respective order.
 3. Seed restaurant table
 `psql -d hungrycomehere -a -f restaurant_seed.sql`
 
+4. Seed days tables
+`psql -d hungrycomehere -a -f days_seed.sql`
+
 4. Seed opening hours table
 `psql -d hungrycomehere -a -f openinghours_seed.sql`
 ---
